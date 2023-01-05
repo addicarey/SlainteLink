@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+ <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.0/web3.min.js"
+      integrity="sha512-bSQ2kf76XufUYS/4XinoHLp5S4lNOyRv0/x5UJACiOMy8ueqTNwRFfUZWmWpwnczjRp9SjiF1jrXbGEim7Y0Xg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    
+
+    <title>Sláinte-Link</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Sláinte-Link" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <a href="index.html" class="navimg" >
+      <img 
+        src="https://cdn.glitch.global/db8532fc-5dc3-4c48-9da0-3046c7124f98/slpow.jpg?v=1670951241427"
+        alt="logo.jpg"
+        width="350px"
+           height="80px"/></a>
+    <div class="topnav">
+      
+      <a href="account.html">Account</a>
+      <a class="active" href="about.html">About</a>
+      <a href="index.html">Home</a>
+    </div>
+      <div class="title1">
+        <h2>
+          About
+        </h2>  
+      </div>
+       
+      <p class="line">
+    </p>
+    <br />
+    <p class= "abtpg">
+      <b>Introduction</b>
+      <br />
+      Sláinte-Link is a web3 based secure medical records system using blockchain 
+      technology, inspired by ransomware attack the HSE suffered in 2021 which caused an 
+      encryption of 80% of the HSE’s severs. Having a medical records system based on 
+      a blockchain allows medical professionals to add patients medical data securely 
+      and safely without it being at risk of theft or deletion. All of the medical records 
+      held by the HSE to this day are still at risk of being stolen and deleted, which
+      is not reliable and another ransomware attack could occur at any point. 
+      <br />
+      <br />
+      <b>Creation</b>
+      <br />
+       I started creating Sláinte-Link in May 2022 by creating a basic smart contract using Solidity.
+      Solidity is an object-orientated programming language for making smart contracts.
+      After I deployed the smart contract, I used a JavaScript API to connect it to a simple 
+      website I made on Glitch. My first version of Sláinte-Link was only able to upload one 
+      variable at a time to the blockchain. Uploading one or multiple variables at a time with
+      multiple submit buttons is too complicated and crowded. The newest version of Sláinte
+      Link uploads multiple variables to the blockchain in one submit button. How this works 
+      is I created a form on my website, including a few different inputs, and one submit
+      button. This submit button uploads every variable input to a database called JSON. 
+      Then, the database is uploaded to the blockchain which is more efficient and easy 
+      than having multiple submit buttons for different variables.
+      <br />
+      <br />
+      <b>Wallet - MetaMask</b>
+      <br />
+      	For any smart contract to work, there needs to be some sort of transaction involved. 
+      In this case, I am using tester ETH on my wallet MetaMask. MetaMask is a digital wallet 
+      used for transactions on smart contracts. I use tester ETH from a UCLA faucet, as 
+      buying ETH is very expensive. If the HSE were to use my method and idea for keeping 
+      medical records, the would have an app with their own payment system, which they can set 
+      as little or as expensive as they want. At the moment, each time I upload a form to the 
+      blockchain it costs around €1.30, which use to be around 80c a couple of months ago when 
+      I started my project. Depending on the time of day I upload a medical report, sometimes 
+      it costs more than if I uploaded one earlier or later  in the day. It has increased because
+      of inflation in the first place, but also when Ethereum underwent the migration from 
+      PoW to PoS in October 2022. 
+      <br />
+      <br />
+      <b>Migration Process</b>
+      <br />
+      PoW (Proof of Work)  meant that more power and time was used to upload information onto 
+      blocks, which wasn’t as efficient. PoS (Proof of Stake) means that everyone giving a bit 
+      of energy to make running their smart contracts and uploading information  a lot faster 
+      and using less energy. When the migration of PoS took place, they completely shut down 
+      the Ropsten Test Blockchain, which was what Sláinte-Link was run on. Luckily they kept 
+      the Goerli Test Blockchain so I had to migrate to running my project there, which wasn’t 
+      a problem but it made the access to tester ETH a lot harder to get. Because of the costs 
+      inflating and prevention of accessing tester ETH, I have to be careful every time I upload 
+      information onto the blockchain. Sometimes it could cost 0.5 ETH or it could cost 
+      0.000986 ETH. I could lose a lot of my ETH at any point if I make a wrong  purchase.
+      <br />
+      <br />
+      <b>Website</b>
+      <br />
+      I made Sláinte-Link on Glitch, as Repl.it has been running slow for me and is not quick 
+      to access. I used Solidity for the smart contract, JavaScript, HTML and CSS. The Solidity 
+      is connected to my website through a JavaScript API that I found on GitHub. Recently I made 
+      a separate website including all of the HTML and CSS that my website would need and did 
+      all of my design aspects on that website. I did this through separate websites as working 
+      on my website with the API and all of the important code could potentially mess things up 
+      and would be a lot harder to undo. After doing most of the design, I transferred all of 
+      the JavaScript and important code to make it everything work onto my designed website to 
+      create the first designed version of Sláinte-Link.
+      <br />
+      <br />
+      <b>Doctor and Patient Uses</b>
+      When you first go onto Sláinte-Link, it will bring you to the landing page of the 
+      website, from there you can click to start or read about the website. If you click <b>account</b>
+      or <b>click to start</b> it will bring you to a login page, where you will click the 
+      appropriate button depending whether you are a patient or a doctor. Either way you will 
+      be requested to enter a password, I have added this password as a safety feature because 
+      if it wasn’t there, patient would have the ability to login as a doctor and add medical data, 
+      which isn’t allowed. After entering the correct password it will bring you to the you 
+      Sláinte-Link account page. From the doctors perspective you can enter a patients medical 
+      data, submit, pay the transaction and then view all of the recent forms you have uploaded to 
+      the blockchain. From a patient’s perspective you can login to the patients page and view 
+      all of your recent forms that have already been uploaded by your doctor to the blockchain. 
+      You can also see all of the recent blocks on the Goerli Etherscan. You can also read about 
+      Sláinte-Link here on the <b>about</b> page.
+      <br />
+      <br />
+      <b>Concludion</b>
+      <br />
+      In conclusion, Sláinte-Link makes uploading medical reports safely without being at risk of 
+      theft or deletion. Which compared to the HSE’s medical records system is a lot more reliable,
+      trustworthy and efficient. Sláinte-Link is done with Alpha testing, which is when the 
+      programmer tests it. It is currently in Beta Testing which means I am getting other people 
+      to test it. The people I have testing Sláinte-Link have access to MetaMask. I am still 
+      tweaking and changing small details all the time, so anything here now could be slightly 
+      changed and tweaked at any point. 
+      <br />
+      <br />
+      Here’s a link to my <a href="https://youtu.be/KkNXaUc07zw"><b>3 minute video</b></a> with a demonstration of Sláinte-Link and some brief 
+      details on how it functions.
+      <br />
+      <br />
+      
+        <blockquote class="imgur-embed-pub" lang="en" data-id="a/9wKExFw" data-context="false" >
+          <a href="//imgur.com/a/9wKExFw"></a>
+        </blockquote>
+        <script async src="//s.imgur.com/min/embed.js" charset="utf-8">
+      </script>
+    
+      
+      
+    </p>
+  
+      <br />
+    <footer>
+      <p class="footer">
+        <a href="account.html">ACCOUNT</a> <br />
+        <a href="about.html">ABOUT</a> <br />
+        <a href="index.html">HOME</a> <br />
+        <br />
+        <a href="http://www.instagram.com">
+          <img
+            src="https://cdn.glitch.global/6945cd21-b8de-4cd1-a188-e2764a57753b/instaslainte.png?v=1668197283359"
+            alt="transparent instgram"
+          />
+        </a>
+        <a href="https://www.twitter.com">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pinclipart.com%2Fpicdir%2Fbig%2F578-5789236_logo-twitter-png-blanc-white-twitter-logo-transparent.png&f=1&nofb=1&ipt=649614ef6252c0ff426e82266c826d4f59be49b08e592451cc0a1d65410772c9&ipo=images"
+            alt="transparent twitter"
+          />
+        </a>
+        <a href="https://www.youtube.com/@slainte-link8141">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodix.com%2Flogo%2F395070.png&f=1&nofb=1&ipt=0aa9fad827cf52e25e9fba4ea7e5f6840f31e9edaee91748e0db5839a19fdfd9&ipo=images"
+            alt="transparent youtube"
+          />
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
